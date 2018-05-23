@@ -1,7 +1,7 @@
 # Write your code here.
 require 'pry'
 
-def dictionary(word) 
+def dictionary 
   dictionay_hash = { "hello" => "hi",
                   "to, two, too" => "2",
                   "for, four" => "4",
