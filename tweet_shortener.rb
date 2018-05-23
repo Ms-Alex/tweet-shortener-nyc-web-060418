@@ -18,8 +18,10 @@ def word_substituter(original_tweet)
   original_array = original_tweet.split
   
   new_tweet = original_array.collect { |word| 
-    word = dictionary[word.downcase] if dictionary.keys.include?(word.downcase)
-    word
+    if dictionary.keys.include?(word.downcase)
+      word = dictionary[word.downcase] 
+    else
+      word
     } 
   new_tweet.join(" ")
   
